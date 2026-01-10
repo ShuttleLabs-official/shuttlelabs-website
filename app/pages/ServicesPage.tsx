@@ -1,11 +1,15 @@
+import { ServicesHero } from "@/app/components/services-hero"
+import { ServicesGrid } from "@/app/components/services-grid"
+import { Methodology } from "@/app/components/methodology"
+import { ContactSection } from "@/app/components/contact-section"
+
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-black text-white py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-center">
-          Services
-        </h1>
-      </div>
-    </div>
-  );
+    <main className="min-h-screen bg-[#0a0a0a]">
+      <ServicesHero />
+      <ServicesGrid />
+      <Methodology />
+      <ContactSection />
+    </main>
+  )
 }
